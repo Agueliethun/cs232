@@ -1,0 +1,2 @@
+1. The program runs differently each time. This is because the scheduler may grab different threads each time we run it.
+2. Setting priorities still did not determine the order for my customers. Even when customer 10 had an extremely high priority (close to zero), other customers still sometimes jumped ahead of him. This is probably because the scheduler doesn't heed priorities that much and instead has other criteria for choosing which thread can proceed.

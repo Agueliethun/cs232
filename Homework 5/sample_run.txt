@@ -1,0 +1,655 @@
+mrn6@hopper:~/workspace/CS 232/Homework 5$ python3 main.py
+Monitor: enter ? to see options.
+MON> !
+State of the CPU is:
+CPU 0: pc 0, reg0 0, reg1 0, reg2 0
+---------------------------------------------------------------------------
+MON> l 20 mult.asm
+Created PCB for process mult
+Main found at location 20
+Tape loaded from 20 to 32
+PCB(1): mult, state NEW, entrypoint 20
+add_to_ready_q: queue is now:
+	PCB(1): mult, state READY, entrypoint 20
+Num ready processes = 1
+State of the CPU is:
+CPU 0: pc 0, reg0 0, reg1 0, reg2 0
+---------------------------------------------------------------------------
+MON> d 10
+Enter value (. to end) [10]> 5
+Enter value (. to end) [11]> 4 
+Enter value (. to end) [12]> .
+State of the CPU is:
+CPU 0: pc 0, reg0 0, reg1 0, reg2 0
+---------------------------------------------------------------------------
+MON> l 100 fib.asm
+Created PCB for process fib
+Main found at location 100
+Tape loaded from 100 to 125
+PCB(2): fib, state NEW, entrypoint 100
+add_to_ready_q: queue is now:
+	PCB(1): mult, state READY, entrypoint 20
+	PCB(2): fib, state READY, entrypoint 100
+Num ready processes = 2
+State of the CPU is:
+CPU 0: pc 0, reg0 0, reg1 0, reg2 0
+---------------------------------------------------------------------------
+MON> d 50
+Enter value (. to end) [50]> 8
+Enter value (. to end) [51]> .
+State of the CPU is:
+CPU 0: pc 0, reg0 0, reg1 0, reg2 0
+---------------------------------------------------------------------------
+MON> r
+Timer: set countdown to 3
+{'reg1': 0, 'pc': 20, 'reg2': 0, 'reg0': 0}
+Executing code at [20]: mov 0 12
+CPU 0: pc 21, reg0 0, reg1 0, reg2 0
+{'reg1': 0, 'pc': 21, 'reg2': 0, 'reg0': 0}
+Executing code at [21]: mov *10 reg2
+CPU 0: pc 22, reg0 0, reg1 0, reg2 5
+{'reg1': 0, 'pc': 22, 'reg2': 5, 'reg0': 0}
+Executing code at [22]: jez reg2 31
+CPU 0: pc 23, reg0 0, reg1 0, reg2 5
+{'reg1': 0, 'pc': 23, 'reg2': 5, 'reg0': 0}
+Executing code at [23]: mov *11 reg1
+CPU 0: pc 24, reg0 0, reg1 4, reg2 5
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 0, 'pc': 100, 'reg2': 0, 'reg0': 0}
+Executing code at [100]: mov 1 150
+CPU 0: pc 101, reg0 0, reg1 0, reg2 0
+{'reg1': 0, 'pc': 101, 'reg2': 0, 'reg0': 0}
+Executing code at [101]: mov 1 151
+CPU 0: pc 102, reg0 0, reg1 0, reg2 0
+{'reg1': 0, 'pc': 102, 'reg2': 0, 'reg0': 0}
+Executing code at [102]: mov 1 500
+CPU 0: pc 103, reg0 0, reg1 0, reg2 0
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 0, 'pc': 103, 'reg2': 0, 'reg0': 0}
+Executing code at [103]: mov 1 501
+CPU 0: pc 104, reg0 0, reg1 0, reg2 0
+{'reg1': 0, 'pc': 104, 'reg2': 0, 'reg0': 0}
+Executing code at [104]: mov 502 152
+CPU 0: pc 105, reg0 0, reg1 0, reg2 0
+{'reg1': 0, 'pc': 105, 'reg2': 0, 'reg0': 0}
+Executing code at [105]: mov *50 reg0
+CPU 0: pc 106, reg0 8, reg1 0, reg2 0
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 0, 'pc': 106, 'reg2': 0, 'reg0': 8}
+Executing code at [106]: sub 2 reg0
+CPU 0: pc 107, reg0 6, reg1 0, reg2 0
+{'reg1': 0, 'pc': 107, 'reg2': 0, 'reg0': 6}
+Executing code at [107]: mov reg0 153
+CPU 0: pc 108, reg0 6, reg1 0, reg2 0
+{'reg1': 0, 'pc': 108, 'reg2': 0, 'reg0': 6}
+Executing code at [108]: mov *153 reg0
+CPU 0: pc 109, reg0 6, reg1 0, reg2 0
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 0, 'pc': 109, 'reg2': 0, 'reg0': 6}
+Executing code at [109]: jez reg0 124
+CPU 0: pc 110, reg0 6, reg1 0, reg2 0
+{'reg1': 0, 'pc': 110, 'reg2': 0, 'reg0': 6}
+Executing code at [110]: mov *150 reg0
+CPU 0: pc 111, reg0 1, reg1 0, reg2 0
+{'reg1': 0, 'pc': 111, 'reg2': 0, 'reg0': 1}
+Executing code at [111]: mov *151 reg1
+CPU 0: pc 112, reg0 1, reg1 1, reg2 0
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 1, 'pc': 112, 'reg2': 0, 'reg0': 1}
+Executing code at [112]: mov reg1 reg2
+CPU 0: pc 113, reg0 1, reg1 1, reg2 1
+{'reg1': 1, 'pc': 113, 'reg2': 1, 'reg0': 1}
+Executing code at [113]: add reg0 reg2
+CPU 0: pc 114, reg0 1, reg1 1, reg2 2
+{'reg1': 1, 'pc': 114, 'reg2': 2, 'reg0': 1}
+Executing code at [114]: mov reg1 150
+CPU 0: pc 115, reg0 1, reg1 1, reg2 2
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 1, 'pc': 115, 'reg2': 2, 'reg0': 1}
+Executing code at [115]: mov reg2 151
+CPU 0: pc 116, reg0 1, reg1 1, reg2 2
+{'reg1': 1, 'pc': 116, 'reg2': 2, 'reg0': 1}
+Executing code at [116]: mov *152 reg0
+CPU 0: pc 117, reg0 502, reg1 1, reg2 2
+{'reg1': 1, 'pc': 117, 'reg2': 2, 'reg0': 502}
+Executing code at [117]: mov reg2 *reg0
+CPU 0: pc 118, reg0 502, reg1 1, reg2 2
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 1, 'pc': 118, 'reg2': 2, 'reg0': 502}
+Executing code at [118]: add 1 reg0
+CPU 0: pc 119, reg0 503, reg1 1, reg2 2
+{'reg1': 1, 'pc': 119, 'reg2': 2, 'reg0': 503}
+Executing code at [119]: mov reg0 152
+CPU 0: pc 120, reg0 503, reg1 1, reg2 2
+{'reg1': 1, 'pc': 120, 'reg2': 2, 'reg0': 503}
+Executing code at [120]: mov *153 reg2
+CPU 0: pc 121, reg0 503, reg1 1, reg2 6
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 1, 'pc': 121, 'reg2': 6, 'reg0': 503}
+Executing code at [121]: sub 1 reg2
+CPU 0: pc 122, reg0 503, reg1 1, reg2 5
+{'reg1': 1, 'pc': 122, 'reg2': 5, 'reg0': 503}
+Executing code at [122]: mov reg2 153
+CPU 0: pc 123, reg0 503, reg1 1, reg2 5
+{'reg1': 1, 'pc': 123, 'reg2': 5, 'reg0': 503}
+Executing code at [123]: jmp 108
+CPU 0: pc 108, reg0 503, reg1 1, reg2 5
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 1, 'pc': 108, 'reg2': 5, 'reg0': 503}
+Executing code at [108]: mov *153 reg0
+CPU 0: pc 109, reg0 5, reg1 1, reg2 5
+{'reg1': 1, 'pc': 109, 'reg2': 5, 'reg0': 5}
+Executing code at [109]: jez reg0 124
+CPU 0: pc 110, reg0 5, reg1 1, reg2 5
+{'reg1': 1, 'pc': 110, 'reg2': 5, 'reg0': 5}
+Executing code at [110]: mov *150 reg0
+CPU 0: pc 111, reg0 1, reg1 1, reg2 5
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 1, 'pc': 111, 'reg2': 5, 'reg0': 1}
+Executing code at [111]: mov *151 reg1
+CPU 0: pc 112, reg0 1, reg1 2, reg2 5
+{'reg1': 2, 'pc': 112, 'reg2': 5, 'reg0': 1}
+Executing code at [112]: mov reg1 reg2
+CPU 0: pc 113, reg0 1, reg1 2, reg2 2
+{'reg1': 2, 'pc': 113, 'reg2': 2, 'reg0': 1}
+Executing code at [113]: add reg0 reg2
+CPU 0: pc 114, reg0 1, reg1 2, reg2 3
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 2, 'pc': 114, 'reg2': 3, 'reg0': 1}
+Executing code at [114]: mov reg1 150
+CPU 0: pc 115, reg0 1, reg1 2, reg2 3
+{'reg1': 2, 'pc': 115, 'reg2': 3, 'reg0': 1}
+Executing code at [115]: mov reg2 151
+CPU 0: pc 116, reg0 1, reg1 2, reg2 3
+{'reg1': 2, 'pc': 116, 'reg2': 3, 'reg0': 1}
+Executing code at [116]: mov *152 reg0
+CPU 0: pc 117, reg0 503, reg1 2, reg2 3
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 2, 'pc': 117, 'reg2': 3, 'reg0': 503}
+Executing code at [117]: mov reg2 *reg0
+CPU 0: pc 118, reg0 503, reg1 2, reg2 3
+{'reg1': 2, 'pc': 118, 'reg2': 3, 'reg0': 503}
+Executing code at [118]: add 1 reg0
+CPU 0: pc 119, reg0 504, reg1 2, reg2 3
+{'reg1': 2, 'pc': 119, 'reg2': 3, 'reg0': 504}
+Executing code at [119]: mov reg0 152
+CPU 0: pc 120, reg0 504, reg1 2, reg2 3
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 2, 'pc': 120, 'reg2': 3, 'reg0': 504}
+Executing code at [120]: mov *153 reg2
+CPU 0: pc 121, reg0 504, reg1 2, reg2 5
+{'reg1': 2, 'pc': 121, 'reg2': 5, 'reg0': 504}
+Executing code at [121]: sub 1 reg2
+CPU 0: pc 122, reg0 504, reg1 2, reg2 4
+{'reg1': 2, 'pc': 122, 'reg2': 4, 'reg0': 504}
+Executing code at [122]: mov reg2 153
+CPU 0: pc 123, reg0 504, reg1 2, reg2 4
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 2, 'pc': 123, 'reg2': 4, 'reg0': 504}
+Executing code at [123]: jmp 108
+CPU 0: pc 108, reg0 504, reg1 2, reg2 4
+{'reg1': 2, 'pc': 108, 'reg2': 4, 'reg0': 504}
+Executing code at [108]: mov *153 reg0
+CPU 0: pc 109, reg0 4, reg1 2, reg2 4
+{'reg1': 2, 'pc': 109, 'reg2': 4, 'reg0': 4}
+Executing code at [109]: jez reg0 124
+CPU 0: pc 110, reg0 4, reg1 2, reg2 4
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 2, 'pc': 110, 'reg2': 4, 'reg0': 4}
+Executing code at [110]: mov *150 reg0
+CPU 0: pc 111, reg0 2, reg1 2, reg2 4
+{'reg1': 2, 'pc': 111, 'reg2': 4, 'reg0': 2}
+Executing code at [111]: mov *151 reg1
+CPU 0: pc 112, reg0 2, reg1 3, reg2 4
+{'reg1': 3, 'pc': 112, 'reg2': 4, 'reg0': 2}
+Executing code at [112]: mov reg1 reg2
+CPU 0: pc 113, reg0 2, reg1 3, reg2 3
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 3, 'pc': 113, 'reg2': 3, 'reg0': 2}
+Executing code at [113]: add reg0 reg2
+CPU 0: pc 114, reg0 2, reg1 3, reg2 5
+{'reg1': 3, 'pc': 114, 'reg2': 5, 'reg0': 2}
+Executing code at [114]: mov reg1 150
+CPU 0: pc 115, reg0 2, reg1 3, reg2 5
+{'reg1': 3, 'pc': 115, 'reg2': 5, 'reg0': 2}
+Executing code at [115]: mov reg2 151
+CPU 0: pc 116, reg0 2, reg1 3, reg2 5
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 3, 'pc': 116, 'reg2': 5, 'reg0': 2}
+Executing code at [116]: mov *152 reg0
+CPU 0: pc 117, reg0 504, reg1 3, reg2 5
+{'reg1': 3, 'pc': 117, 'reg2': 5, 'reg0': 504}
+Executing code at [117]: mov reg2 *reg0
+CPU 0: pc 118, reg0 504, reg1 3, reg2 5
+{'reg1': 3, 'pc': 118, 'reg2': 5, 'reg0': 504}
+Executing code at [118]: add 1 reg0
+CPU 0: pc 119, reg0 505, reg1 3, reg2 5
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 3, 'pc': 119, 'reg2': 5, 'reg0': 505}
+Executing code at [119]: mov reg0 152
+CPU 0: pc 120, reg0 505, reg1 3, reg2 5
+{'reg1': 3, 'pc': 120, 'reg2': 5, 'reg0': 505}
+Executing code at [120]: mov *153 reg2
+CPU 0: pc 121, reg0 505, reg1 3, reg2 4
+{'reg1': 3, 'pc': 121, 'reg2': 4, 'reg0': 505}
+Executing code at [121]: sub 1 reg2
+CPU 0: pc 122, reg0 505, reg1 3, reg2 3
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 3, 'pc': 122, 'reg2': 3, 'reg0': 505}
+Executing code at [122]: mov reg2 153
+CPU 0: pc 123, reg0 505, reg1 3, reg2 3
+{'reg1': 3, 'pc': 123, 'reg2': 3, 'reg0': 505}
+Executing code at [123]: jmp 108
+CPU 0: pc 108, reg0 505, reg1 3, reg2 3
+{'reg1': 3, 'pc': 108, 'reg2': 3, 'reg0': 505}
+Executing code at [108]: mov *153 reg0
+CPU 0: pc 109, reg0 3, reg1 3, reg2 3
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 3, 'pc': 109, 'reg2': 3, 'reg0': 3}
+Executing code at [109]: jez reg0 124
+CPU 0: pc 110, reg0 3, reg1 3, reg2 3
+{'reg1': 3, 'pc': 110, 'reg2': 3, 'reg0': 3}
+Executing code at [110]: mov *150 reg0
+CPU 0: pc 111, reg0 3, reg1 3, reg2 3
+{'reg1': 3, 'pc': 111, 'reg2': 3, 'reg0': 3}
+Executing code at [111]: mov *151 reg1
+CPU 0: pc 112, reg0 3, reg1 5, reg2 3
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 5, 'pc': 112, 'reg2': 3, 'reg0': 3}
+Executing code at [112]: mov reg1 reg2
+CPU 0: pc 113, reg0 3, reg1 5, reg2 5
+{'reg1': 5, 'pc': 113, 'reg2': 5, 'reg0': 3}
+Executing code at [113]: add reg0 reg2
+CPU 0: pc 114, reg0 3, reg1 5, reg2 8
+{'reg1': 5, 'pc': 114, 'reg2': 8, 'reg0': 3}
+Executing code at [114]: mov reg1 150
+CPU 0: pc 115, reg0 3, reg1 5, reg2 8
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 5, 'pc': 115, 'reg2': 8, 'reg0': 3}
+Executing code at [115]: mov reg2 151
+CPU 0: pc 116, reg0 3, reg1 5, reg2 8
+{'reg1': 5, 'pc': 116, 'reg2': 8, 'reg0': 3}
+Executing code at [116]: mov *152 reg0
+CPU 0: pc 117, reg0 505, reg1 5, reg2 8
+{'reg1': 5, 'pc': 117, 'reg2': 8, 'reg0': 505}
+Executing code at [117]: mov reg2 *reg0
+CPU 0: pc 118, reg0 505, reg1 5, reg2 8
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 5, 'pc': 118, 'reg2': 8, 'reg0': 505}
+Executing code at [118]: add 1 reg0
+CPU 0: pc 119, reg0 506, reg1 5, reg2 8
+{'reg1': 5, 'pc': 119, 'reg2': 8, 'reg0': 506}
+Executing code at [119]: mov reg0 152
+CPU 0: pc 120, reg0 506, reg1 5, reg2 8
+{'reg1': 5, 'pc': 120, 'reg2': 8, 'reg0': 506}
+Executing code at [120]: mov *153 reg2
+CPU 0: pc 121, reg0 506, reg1 5, reg2 3
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 5, 'pc': 121, 'reg2': 3, 'reg0': 506}
+Executing code at [121]: sub 1 reg2
+CPU 0: pc 122, reg0 506, reg1 5, reg2 2
+{'reg1': 5, 'pc': 122, 'reg2': 2, 'reg0': 506}
+Executing code at [122]: mov reg2 153
+CPU 0: pc 123, reg0 506, reg1 5, reg2 2
+{'reg1': 5, 'pc': 123, 'reg2': 2, 'reg0': 506}
+Executing code at [123]: jmp 108
+CPU 0: pc 108, reg0 506, reg1 5, reg2 2
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 5, 'pc': 108, 'reg2': 2, 'reg0': 506}
+Executing code at [108]: mov *153 reg0
+CPU 0: pc 109, reg0 2, reg1 5, reg2 2
+{'reg1': 5, 'pc': 109, 'reg2': 2, 'reg0': 2}
+Executing code at [109]: jez reg0 124
+CPU 0: pc 110, reg0 2, reg1 5, reg2 2
+{'reg1': 5, 'pc': 110, 'reg2': 2, 'reg0': 2}
+Executing code at [110]: mov *150 reg0
+CPU 0: pc 111, reg0 5, reg1 5, reg2 2
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 5, 'pc': 111, 'reg2': 2, 'reg0': 5}
+Executing code at [111]: mov *151 reg1
+CPU 0: pc 112, reg0 5, reg1 8, reg2 2
+{'reg1': 8, 'pc': 112, 'reg2': 2, 'reg0': 5}
+Executing code at [112]: mov reg1 reg2
+CPU 0: pc 113, reg0 5, reg1 8, reg2 8
+{'reg1': 8, 'pc': 113, 'reg2': 8, 'reg0': 5}
+Executing code at [113]: add reg0 reg2
+CPU 0: pc 114, reg0 5, reg1 8, reg2 13
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 8, 'pc': 114, 'reg2': 13, 'reg0': 5}
+Executing code at [114]: mov reg1 150
+CPU 0: pc 115, reg0 5, reg1 8, reg2 13
+{'reg1': 8, 'pc': 115, 'reg2': 13, 'reg0': 5}
+Executing code at [115]: mov reg2 151
+CPU 0: pc 116, reg0 5, reg1 8, reg2 13
+{'reg1': 8, 'pc': 116, 'reg2': 13, 'reg0': 5}
+Executing code at [116]: mov *152 reg0
+CPU 0: pc 117, reg0 506, reg1 8, reg2 13
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 8, 'pc': 117, 'reg2': 13, 'reg0': 506}
+Executing code at [117]: mov reg2 *reg0
+CPU 0: pc 118, reg0 506, reg1 8, reg2 13
+{'reg1': 8, 'pc': 118, 'reg2': 13, 'reg0': 506}
+Executing code at [118]: add 1 reg0
+CPU 0: pc 119, reg0 507, reg1 8, reg2 13
+{'reg1': 8, 'pc': 119, 'reg2': 13, 'reg0': 507}
+Executing code at [119]: mov reg0 152
+CPU 0: pc 120, reg0 507, reg1 8, reg2 13
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 8, 'pc': 120, 'reg2': 13, 'reg0': 507}
+Executing code at [120]: mov *153 reg2
+CPU 0: pc 121, reg0 507, reg1 8, reg2 2
+{'reg1': 8, 'pc': 121, 'reg2': 2, 'reg0': 507}
+Executing code at [121]: sub 1 reg2
+CPU 0: pc 122, reg0 507, reg1 8, reg2 1
+{'reg1': 8, 'pc': 122, 'reg2': 1, 'reg0': 507}
+Executing code at [122]: mov reg2 153
+CPU 0: pc 123, reg0 507, reg1 8, reg2 1
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 8, 'pc': 123, 'reg2': 1, 'reg0': 507}
+Executing code at [123]: jmp 108
+CPU 0: pc 108, reg0 507, reg1 8, reg2 1
+{'reg1': 8, 'pc': 108, 'reg2': 1, 'reg0': 507}
+Executing code at [108]: mov *153 reg0
+CPU 0: pc 109, reg0 1, reg1 8, reg2 1
+{'reg1': 8, 'pc': 109, 'reg2': 1, 'reg0': 1}
+Executing code at [109]: jez reg0 124
+CPU 0: pc 110, reg0 1, reg1 8, reg2 1
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 8, 'pc': 110, 'reg2': 1, 'reg0': 1}
+Executing code at [110]: mov *150 reg0
+CPU 0: pc 111, reg0 8, reg1 8, reg2 1
+{'reg1': 8, 'pc': 111, 'reg2': 1, 'reg0': 8}
+Executing code at [111]: mov *151 reg1
+CPU 0: pc 112, reg0 8, reg1 13, reg2 1
+{'reg1': 13, 'pc': 112, 'reg2': 1, 'reg0': 8}
+Executing code at [112]: mov reg1 reg2
+CPU 0: pc 113, reg0 8, reg1 13, reg2 13
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 113, 'reg2': 13, 'reg0': 8}
+Executing code at [113]: add reg0 reg2
+CPU 0: pc 114, reg0 8, reg1 13, reg2 21
+{'reg1': 13, 'pc': 114, 'reg2': 21, 'reg0': 8}
+Executing code at [114]: mov reg1 150
+CPU 0: pc 115, reg0 8, reg1 13, reg2 21
+{'reg1': 13, 'pc': 115, 'reg2': 21, 'reg0': 8}
+Executing code at [115]: mov reg2 151
+CPU 0: pc 116, reg0 8, reg1 13, reg2 21
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 116, 'reg2': 21, 'reg0': 8}
+Executing code at [116]: mov *152 reg0
+CPU 0: pc 117, reg0 507, reg1 13, reg2 21
+{'reg1': 13, 'pc': 117, 'reg2': 21, 'reg0': 507}
+Executing code at [117]: mov reg2 *reg0
+CPU 0: pc 118, reg0 507, reg1 13, reg2 21
+{'reg1': 13, 'pc': 118, 'reg2': 21, 'reg0': 507}
+Executing code at [118]: add 1 reg0
+CPU 0: pc 119, reg0 508, reg1 13, reg2 21
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 119, 'reg2': 21, 'reg0': 508}
+Executing code at [119]: mov reg0 152
+CPU 0: pc 120, reg0 508, reg1 13, reg2 21
+{'reg1': 13, 'pc': 120, 'reg2': 21, 'reg0': 508}
+Executing code at [120]: mov *153 reg2
+CPU 0: pc 121, reg0 508, reg1 13, reg2 1
+{'reg1': 13, 'pc': 121, 'reg2': 1, 'reg0': 508}
+Executing code at [121]: sub 1 reg2
+CPU 0: pc 122, reg0 508, reg1 13, reg2 0
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 122, 'reg2': 0, 'reg0': 508}
+Executing code at [122]: mov reg2 153
+CPU 0: pc 123, reg0 508, reg1 13, reg2 0
+{'reg1': 13, 'pc': 123, 'reg2': 0, 'reg0': 508}
+Executing code at [123]: jmp 108
+CPU 0: pc 108, reg0 508, reg1 13, reg2 0
+{'reg1': 13, 'pc': 108, 'reg2': 0, 'reg0': 508}
+Executing code at [108]: mov *153 reg0
+CPU 0: pc 109, reg0 0, reg1 13, reg2 0
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 109, 'reg2': 0, 'reg0': 0}
+Executing code at [109]: jez reg0 124
+CPU 0: pc 124, reg0 0, reg1 13, reg2 0
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 4, 'pc': 24, 'reg2': 5, 'reg0': 0}
+Executing code at [24]: jez reg1 31
+CPU 0: pc 25, reg0 0, reg1 4, reg2 5
+{'reg1': 4, 'pc': 25, 'reg2': 5, 'reg0': 0}
+Executing code at [25]: mov reg2 reg0
+CPU 0: pc 26, reg0 5, reg1 4, reg2 5
+{'reg1': 4, 'pc': 26, 'reg2': 5, 'reg0': 5}
+Executing code at [26]: sub 1 reg1
+CPU 0: pc 27, reg0 5, reg1 3, reg2 5
+{'reg1': 3, 'pc': 27, 'reg2': 5, 'reg0': 5}
+Executing code at [27]: jez reg1 30
+CPU 0: pc 28, reg0 5, reg1 3, reg2 5
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 13, 'pc': 124, 'reg2': 0, 'reg0': 0}
+Executing code at [124]: end
+Timer: set countdown to 3
+{'reg1': 3, 'pc': 28, 'reg2': 5, 'reg0': 5}
+Executing code at [28]: add reg0 reg2
+CPU 0: pc 29, reg0 5, reg1 3, reg2 10
+{'reg1': 3, 'pc': 29, 'reg2': 10, 'reg0': 5}
+Executing code at [29]: jmp 26
+CPU 0: pc 26, reg0 5, reg1 3, reg2 10
+{'reg1': 3, 'pc': 26, 'reg2': 10, 'reg0': 5}
+Executing code at [26]: sub 1 reg1
+CPU 0: pc 27, reg0 5, reg1 2, reg2 10
+{'reg1': 2, 'pc': 27, 'reg2': 10, 'reg0': 5}
+Executing code at [27]: jez reg1 30
+CPU 0: pc 28, reg0 5, reg1 2, reg2 10
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 2, 'pc': 28, 'reg2': 10, 'reg0': 5}
+Executing code at [28]: add reg0 reg2
+CPU 0: pc 29, reg0 5, reg1 2, reg2 15
+{'reg1': 2, 'pc': 29, 'reg2': 15, 'reg0': 5}
+Executing code at [29]: jmp 26
+CPU 0: pc 26, reg0 5, reg1 2, reg2 15
+{'reg1': 2, 'pc': 26, 'reg2': 15, 'reg0': 5}
+Executing code at [26]: sub 1 reg1
+CPU 0: pc 27, reg0 5, reg1 1, reg2 15
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 1, 'pc': 27, 'reg2': 15, 'reg0': 5}
+Executing code at [27]: jez reg1 30
+CPU 0: pc 28, reg0 5, reg1 1, reg2 15
+{'reg1': 1, 'pc': 28, 'reg2': 15, 'reg0': 5}
+Executing code at [28]: add reg0 reg2
+CPU 0: pc 29, reg0 5, reg1 1, reg2 20
+{'reg1': 1, 'pc': 29, 'reg2': 20, 'reg0': 5}
+Executing code at [29]: jmp 26
+CPU 0: pc 26, reg0 5, reg1 1, reg2 20
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 1, 'pc': 26, 'reg2': 20, 'reg0': 5}
+Executing code at [26]: sub 1 reg1
+CPU 0: pc 27, reg0 5, reg1 0, reg2 20
+{'reg1': 0, 'pc': 27, 'reg2': 20, 'reg0': 5}
+Executing code at [27]: jez reg1 30
+CPU 0: pc 30, reg0 5, reg1 0, reg2 20
+{'reg1': 0, 'pc': 30, 'reg2': 20, 'reg0': 5}
+Executing code at [30]: mov reg2 12
+CPU 0: pc 31, reg0 5, reg1 0, reg2 20
+GOT INTERRUPT
+Timer: set countdown to 3
+{'reg1': 0, 'pc': 31, 'reg2': 20, 'reg0': 5}
+Executing code at [31]: end
+State of the CPU is:
+CPU 0: pc 31, reg0 5, reg1 0, reg2 20
+---------------------------------------------------------------------------
+MON> s 10 14
+[0010] 5
+[0011] 4
+[0012] 20
+[0013] 0
+[0014] 0
+State of the CPU is:
+CPU 0: pc 31, reg0 5, reg1 0, reg2 20
+---------------------------------------------------------------------------
+MON> s 500 510
+[0500] 1
+[0501] 1
+[0502] 2
+[0503] 3
+[0504] 5
+[0505] 8
+[0506] 13
+[0507] 21
+[0508] 0
+[0509] 0
+[0510] 0
+State of the CPU is:
+CPU 0: pc 31, reg0 5, reg1 0, reg2 20
+---------------------------------------------------------------------------
+MON> !
+MON> l 20 mult.asm
+Tape loaded from 20 to 32
+MON> r
+MON> 

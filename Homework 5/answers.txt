@@ -1,0 +1,8 @@
+1. The PCB class is defined in calos.py.
+2. It contains the state, name of the process, the process id (pid), the process' registers, the length of the quantum, and the memory limits (defined with endpoints mem_high and mem_low).
+3. A PCB is created in main.py when the function _load_program is run. It creates the actual PCB within a try catch block on line 179.
+4. There are five defined states for a process in CalOS: new, ready, running, waiting, and done.
+5. current_proc is a variable defined in the main CalOS class file, calos.py, and it is the PCB of the current process.
+6. It creates a mutex lock to protect access and modification of the countdown.
+7. When the timer gets to 0, it generates an interrupt within a mutex lock
+

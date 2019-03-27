@@ -1,0 +1,4 @@
+Tool Used: Ran the program. We learned that the program deletes itself when run with no flags.
+Tool Used: strings: This command returns all printable strings in the file (http://www.linfo.org/strings.html). We discovered some flags to use when running the program. One of them, -n <i>, allocates i items in memory. There is also a command to seed the program, and a command that seeds the random number generator.
+Tool Used: size: This command returns information on the size of the text segment, data segment, and block started by symbol (bss). We learned that the size of the text segment is 4906, the size of the data segment is 744, and the size of the bss is 48. These three added together is 5698.
+Tool Used: Linux file manager: This tool reported the size of the binary to be 14,008 bytes.

@@ -1,0 +1,190 @@
+Script started on Wed 04 Apr 2018 02:11:53 PM EDT
+mrn6@goldberg:~/workspace/CS 232/Homework 6$ ./bakery
+Welcome to the bakery!
+Bread Baking: Loaf completed!
+Customer #1 has entered the store.
+Customer #1 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Customer #2 has entered the store.
+Customer #3 has entered the store.
+Customer #4 has entered the store.
+Customer #5 has entered the store.
+Customer #1 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #1 has received a receipt.
+Customer #1 has left the store.
+Customer #6 has entered the store.
+Bread Baking: Loaf completed!
+Customer #6 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Customer #6 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #6 has received a receipt.
+Customer #6 has left the store.
+Customer #7 has entered the store.
+Bread Baking: Loaf completed!
+Customer #7 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Customer #7 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #7 has received a receipt.
+Customer #7 has left the store.
+Customer #8 has entered the store.
+Bread Baking: Loaf completed!
+Customer #4 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Customer #4 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #4 has received a receipt.
+Customer #4 has left the store.
+Customer #9 has entered the store.
+Bread Baking: Loaf completed!
+Customer #5 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Customer #5 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #5 has received a receipt.
+Customer #5 has left the store.
+Customer #10 has entered the store.
+Bread Baking: Loaf completed!
+Customer #2 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Customer #2 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #2 has received a receipt.
+Customer #2 has left the store.
+Bread Baking: Loaf completed!
+Customer #3 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Customer #3 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #3 has received a receipt.
+Customer #3 has left the store.
+Bread Baking: Loaf completed!
+Customer #8 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Customer #8 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #8 has received a receipt.
+Customer #8 has left the store.
+Bread Baking: Loaf completed!
+Customer #9 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Customer #9 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #9 has received a receipt.
+Customer #9 has left the store.
+Bread Baking: Loaf completed!
+Customer #10 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Bread Baking: All loaves completed!
+Customer #10 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #10 has received a receipt.
+Customer #10 has left the store.
+mrn6@goldberg:~/workspace/CS 232/Homework 6$ ./bakery
+Welcome to the bakery!
+Bread Baking: Loaf completed!
+Customer #1 has entered the store.
+Customer #1 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Customer #2 has entered the store.
+Customer #3 has entered the store.
+Customer #4 has entered the store.
+Customer #5 has entered the store.
+Customer #1 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #1 has received a receipt.
+Customer #1 has left the store.
+Customer #6 has entered the store.
+Bread Baking: Loaf completed!
+Customer #2 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Customer #2 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #2 has received a receipt.
+Customer #2 has left the store.
+Customer #7 has entered the store.
+Bread Baking: Loaf completed!
+Customer #3 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Customer #3 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #3 has received a receipt.
+Customer #3 has left the store.
+Customer #8 has entered the store.
+Bread Baking: Loaf completed!
+Customer #4 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Customer #4 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #4 has received a receipt.
+Customer #4 has left the store.
+Customer #9 has entered the store.
+Bread Baking: Loaf completed!
+Customer #5 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Customer #5 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #5 has received a receipt.
+Customer #5 has left the store.
+Customer #10 has entered the store.
+Bread Baking: Loaf completed!
+Customer #6 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Customer #6 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #6 has received a receipt.
+Customer #6 has left the store.
+Bread Baking: Loaf completed!
+Customer #7 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Customer #7 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #7 has received a receipt.
+Customer #7 has left the store.
+Bread Baking: Loaf completed!
+Customer #8 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Customer #8 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #8 has received a receipt.
+Customer #8 has left the store.
+Bread Baking: Loaf completed!
+Customer #9 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Customer #9 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #9 has received a receipt.
+Customer #9 has left the store.
+Bread Baking: Loaf completed!
+Customer #10 has obtained a loaf of bread; 0 loaves remaining
+Cashier: Has noticed that a customer has grabbed a loaf.
+Bread Baking: All loaves completed!
+Customer #10 has paid, waiting for receipt...
+Cashier: Payment received.
+Cashier: Handing back receipt
+Customer #10 has received a receipt.
+Customer #10 has left the store.
+mrn6@goldberg:~/workspace/CS 232/Homework 6$ exit
+
+Script done on Wed 04 Apr 2018 02:15:02 PM EDT

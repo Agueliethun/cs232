@@ -1,0 +1,310 @@
+Script started on Wed 07 Mar 2018 06:51:29 PM EST
+mrn6@kay:~/workspace/MRShell/Debug$ ./MRShell
+MR. Shell bids you welcome to this fine executing environment!
+MRShell: ~/home/mrn6/workspace/MRShell/Debug$ ls
+CommandLine.d  MRShell		MRShellDriver.o  Path.d    Prompt.o    test
+CommandLine.o  MRShell.d	MRShell.o	 Path.o    sources.mk
+makefile       MRShellDriver.d	objects.mk	 Prompt.d  subdir.mk
+MRShell: ~/home/mrn6/workspace/MRShell/Debug$ cd ..
+MRShell: ~/home/mrn6/workspace/MRShell$ pwd
+/home/mrn6/workspace/MRShell
+MRShell: ~/home/mrn6/workspace/MRShell$ ls -a
+.		 CommandLine.h	MRShell.cpp	   Path.cpp  Prompt.cpp
+..		 .cproject	MRShellDriver.cpp  Path.h    Prompt.h
+CommandLine.cpp  Debug		MRShell.h	   .project  .settings
+MRShell: ~/home/mrn6/workspace/MRShell$ ls -l /home/cs
+total 84
+drwxrwsr-x  3 admin facstf         4096 Jan 26 16:14 101
+drwxrwsr-x 10 admin facstf         4096 Jan 26 16:11 106
+drwxrwsr-x  8 admin facstf         4096 Jan 26 16:14 108
+drwxrwsr-x  9 admin facstf         4096 Jan 26 16:14 112
+drwxrwsr-x  4 admin facstf         4096 Jan 26 16:14 202
+drwxrwsr-x  5 admin facstf         4096 Jan 26 16:12 212
+drwxrwsr-x  5 admin facstf         4096 Jan 26 16:14 214
+drwxrwsr-x  7 admin facstf         4096 Feb 14 09:18 232
+drwxrwsr-x  4 admin facstf         4096 Jan 26 16:12 262
+drwxrwsr-x  3 admin facstf         4096 Jan 26 16:14 300
+drwxrwsr-x  6 admin facstf         4096 Jan 26 16:12 332
+drwxrwsr-x  3 admin facstf         4096 Jan 23  2017 336
+drwxrwsr-x  3 admin facstf         4096 Jan 26 16:13 337
+drwxrwsr-x  3 admin facstf         4096 Jan 26 16:14 364
+drwxrwsr-x  5 admin facstf         4096 Jan 26 16:13 374
+drwxrwsr-x  3 admin facstf         4096 Jan 26 16:14 384
+drwxrwsr-x  3 admin facstf         4096 Jan 26 16:14 390
+drwxrwsr-x  3 admin facstf         4096 Jan 26 16:14 394
+drwxrwsr-x  3 admin facstf         4096 Jan 26 16:14 398
+drwxrwsr-x  3 admin seniorprojects 4096 Feb  7 14:02 seniorprojects
+drwxrwsr-x  4 admin facstf         4096 Jan 26 16:13 w61
+MRShell: ~/home/mrn6/workspace/MRShell$ pwd
+/home/mrn6/workspace/MRShell
+MRShell: ~/home/mrn6/workspace/MRShell$ ps -ax &
+MRShell: ~/home/mrn6/workspace/MRShell$   PID TTY      STAT   TIME COMMAND
+    1 ?        Ss     0:01 /sbin/init nomdmonddf nomdmonisw
+    2 ?        S      0:00 [kthreadd]
+    3 ?        S      0:00 [ksoftirqd/0]
+    4 ?        S      0:00 [kworker/0:0]
+    7 ?        S      0:04 [rcu_sched]
+    8 ?        S      0:00 [rcu_bh]
+    9 ?        S      0:00 [migration/0]
+   10 ?        S      0:00 [watchdog/0]
+   11 ?        S      0:00 [watchdog/1]
+   12 ?        S      0:00 [migration/1]
+   13 ?        S      0:00 [ksoftirqd/1]
+   16 ?        S      0:00 [watchdog/2]
+   17 ?        S      0:00 [migration/2]
+   18 ?        S      0:00 [ksoftirqd/2]
+   20 ?        S<     0:00 [kworker/2:0H]
+   21 ?        S      0:00 [watchdog/3]
+   22 ?        S      0:00 [migration/3]
+   23 ?        S      0:00 [ksoftirqd/3]
+   25 ?        S<     0:00 [kworker/3:0H]
+   26 ?        S      0:00 [watchdog/4]
+   27 ?        S      0:00 [migration/4]
+   28 ?        S      0:00 [ksoftirqd/4]
+   30 ?        S<     0:00 [kworker/4:0H]
+   31 ?        S      0:00 [watchdog/5]
+   32 ?        S      0:00 [migration/5]
+   33 ?        S      0:00 [ksoftirqd/5]
+   35 ?        S<     0:00 [kworker/5:0H]
+   36 ?        S      0:00 [watchdog/6]
+   37 ?        S      0:00 [migration/6]
+   38 ?        S      0:00 [ksoftirqd/6]
+   40 ?        S<     0:00 [kworker/6:0H]
+   41 ?        S      0:00 [watchdog/7]
+   42 ?        S      0:00 [migration/7]
+   43 ?        S      0:00 [ksoftirqd/7]
+   45 ?        S<     0:00 [kworker/7:0H]
+   46 ?        S      0:00 [kdevtmpfs]
+   47 ?        S<     0:00 [netns]
+   48 ?        S<     0:00 [perf]
+   49 ?        S      0:00 [khungtaskd]
+   50 ?        S<     0:00 [writeback]
+   51 ?        SN     0:00 [ksmd]
+   52 ?        SN     0:00 [khugepaged]
+   53 ?        S<     0:00 [crypto]
+   54 ?        S<     0:00 [kintegrityd]
+   55 ?        S<     0:00 [bioset]
+   56 ?        S<     0:00 [kblockd]
+   57 ?        S<     0:00 [ata_sff]
+   58 ?        S<     0:00 [md]
+   59 ?        S<     0:00 [devfreq_wq]
+   64 ?        S      0:00 [kswapd0]
+   65 ?        S<     0:00 [vmstat]
+   66 ?        S      0:00 [fsnotify_mark]
+   67 ?        S      0:00 [ecryptfs-kthrea]
+   83 ?        S<     0:00 [kthrotld]
+   84 ?        S<     0:00 [acpi_thermal_pm]
+   85 ?        S<     0:00 [bioset]
+   86 ?        S<     0:00 [bioset]
+   87 ?        S<     0:00 [bioset]
+   88 ?        S<     0:00 [bioset]
+   89 ?        S<     0:00 [bioset]
+   90 ?        S<     0:00 [bioset]
+   91 ?        S<     0:00 [bioset]
+   92 ?        S<     0:00 [bioset]
+   96 ?        S<     0:00 [ipv6_addrconf]
+  109 ?        S<     0:00 [deferwq]
+  110 ?        S<     0:00 [charger_manager]
+  165 ?        S      0:00 [scsi_eh_0]
+  166 ?        S<     0:00 [scsi_tmf_0]
+  167 ?        S<     0:00 [kpsmoused]
+  169 ?        S      0:00 [scsi_eh_1]
+  170 ?        S<     0:00 [scsi_tmf_1]
+  171 ?        S      0:00 [scsi_eh_2]
+  172 ?        S<     0:00 [scsi_tmf_2]
+  173 ?        S      0:00 [scsi_eh_3]
+  174 ?        S<     0:00 [scsi_tmf_3]
+  175 ?        S      0:00 [scsi_eh_4]
+  176 ?        S<     0:00 [scsi_tmf_4]
+  177 ?        S      0:00 [scsi_eh_5]
+  178 ?        S<     0:00 [scsi_tmf_5]
+  185 ?        S      0:00 [nvidia-modeset]
+  187 ?        S      0:00 [kworker/6:1]
+  192 ?        S<     0:00 [bioset]
+  225 ?        S      0:00 [jbd2/sda5-8]
+  226 ?        S<     0:00 [ext4-rsv-conver]
+  273 ?        S      0:00 [kauditd]
+  285 ?        Ss     0:00 /lib/systemd/systemd-journald
+  295 ?        S<     0:00 [rpciod]
+  346 ?        Ss     0:00 /lib/systemd/systemd-udevd
+  487 ?        Ss     0:00 /usr/sbin/rpc.gssd
+  603 ?        S      0:00 [irq/30-mei_me]
+  653 ?        S<     0:00 [kvm-irqfd-clean]
+  795 ?        S      0:00 [UVM global queu]
+  796 ?        S      0:00 [UVM Tools Event]
+  860 ?        Ss     0:00 avahi-daemon: running [kay.local]
+  864 ?        Ss     0:00 /usr/sbin/inetd -i
+  866 ?        Ss     0:00 /usr/sbin/atd -f
+  868 ?        Ssl    0:00 /usr/sbin/rsyslogd -n
+  873 ?        Ss     0:01 /usr/sbin/sssd -i -f
+  883 ?        Ss     0:00 /usr/sbin/cron -f
+  885 ?        S      0:00 avahi-daemon: chroot helper
+  888 ?        Ssl    0:00 /usr/lib/snapd/snapd
+  899 ?        Ss     0:01 /usr/bin/dbus-daemon --system --address=systemd: --no
+  945 ?        S      0:14 /usr/lib/x86_64-linux-gnu/sssd/sssd_be --domain cs.ca
+  950 ?        S      0:03 /usr/lib/x86_64-linux-gnu/sssd/sssd_nss --uid 0 --gid
+  951 ?        S      0:00 /usr/lib/x86_64-linux-gnu/sssd/sssd_sudo --uid 0 --gi
+  952 ?        S      0:00 /usr/lib/x86_64-linux-gnu/sssd/sssd_pam --uid 0 --gid
+  953 ?        S      0:00 /usr/lib/x86_64-linux-gnu/sssd/sssd_ssh --uid 0 --gid
+  954 ?        S      0:00 /usr/lib/x86_64-linux-gnu/sssd/sssd_pac --uid 0 --gid
+  955 ?        Ssl    0:00 /usr/sbin/NetworkManager --no-daemon
+  965 ?        Ss     0:01 /usr/sbin/acpid
+ 1022 ?        Ssl    0:00 /usr/lib/colord/colord
+ 1027 ?        Ssl    0:02 /usr/lib/accountsservice/accounts-daemon
+ 1029 ?        Ss     0:00 /lib/systemd/systemd-logind
+ 1060 ?        S<     0:00 [iprt-VBoxWQueue]
+ 1064 ?        Ssl    0:00 /usr/lib/policykit-1/polkitd --no-debug
+ 1072 ?        S      0:00 [iprt-VBoxTscThr]
+ 1223 ?        Ss     0:00 /sbin/dhclient -1 -v -pf /run/dhclient.enp0s25.pid -l
+ 1333 ?        Ssl    0:00 /usr/bin/whoopsie -f
+ 1345 ?        Ssl    0:55 /usr/bin/mongod --config /etc/mongod.conf
+ 1347 ?        Ss     0:00 /usr/sbin/certmonger -S -p /var/run/certmonger.pid -n
+ 1353 ?        Ss     0:00 /usr/sbin/sshd -D
+ 1355 ?        Ss     0:00 /usr/sbin/oddjobd -n -p /var/run/oddjobd.pid -t 300
+ 1356 ?        Ss     0:00 /usr/games/bzfs -advertise NONE
+ 1377 ?        S<     0:00 [nfsiod]
+ 1434 ?        S      0:00 [nfsv4.0-svc]
+ 1563 ?        SLsl   0:00 /usr/sbin/lightdm
+ 1570 tty7     Ss+    6:50 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/ru
+ 1604 ?        S      0:19 [irq/31-nvidia]
+ 1605 ?        S      0:00 [nvidia]
+ 1709 ?        Ss     0:00 /usr/bin/nvidia-persistenced --user nvidia-persistenc
+ 1727 ?        Ss     0:00 /usr/lib/postfix/sbin/master
+ 1729 ?        S      0:00 qmgr -l -t unix -u
+ 1750 ?        Ssl    0:00 /usr/bin/ruby /usr/bin/puppet agent
+ 1770 tty1     Ss+    0:00 /sbin/agetty --noclear tty1 linux
+ 1875 ?        SNsl   0:00 /usr/lib/rtkit/rtkit-daemon
+ 2469 ?        Ss     0:00 /usr/sbin/ntpd -p /var/run/ntpd.pid -c /var/lib/ntp/n
+ 3409 ?        Sl     0:00 lightdm --session-child 12 21
+ 3419 ?        Ss     0:00 /lib/systemd/systemd --user
+ 3421 ?        S      0:00 (sd-pam)
+ 3426 ?        Sl     0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+ 3429 ?        Ss     0:00 /sbin/upstart --user
+ 3496 ?        S      0:00 upstart-udev-bridge --daemon --user
+ 3498 ?        Ss     0:00 dbus-daemon --fork --session --address=unix:abstract=
+ 3551 ?        S      0:00 upstart-dbus-bridge --daemon --session --user --bus-n
+ 3555 ?        S      0:00 upstart-file-bridge --daemon --user
+ 3556 ?        S      0:00 upstart-dbus-bridge --daemon --system --user --bus-na
+ 3561 ?        Ss     0:00 gpg-agent --homedir /home/mrn6/.gnupg --use-standard-
+ 3570 ?        Ss     0:00 /bin/sh /etc/xdg/xfce4/xinitrc -- /etc/X11/xinit/xser
+ 3581 ?        Sl     0:00 xfce4-session
+ 3585 ?        S      0:00 /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd
+ 3590 ?        S      0:15 xfwm4 --replace --display :0.0 --sm-client-id 283e10c
+ 3592 ?        Sl     0:06 Thunar --sm-client-id 2d68299b6-310e-463c-be16-db8f74
+ 3594 ?        Sl     0:02 xfce4-panel --display :0.0 --sm-client-id 26863dfba-3
+ 3595 ?        Ssl    0:01 xfsettingsd --display :0.0 --sm-client-id 28118dd0c-5
+ 3597 ?        Sl     0:01 xfdesktop --display :0.0 --sm-client-id 2807019ec-cbb
+ 3603 ?        Ssl    0:00 /usr/lib/upower/upowerd
+ 3604 ?        Sl     0:02 xfce4-terminal --geometry=80x24 --display :0.0 --role
+ 3607 ?        Sl     0:00 /usr/lib/gvfs/gvfsd
+ 3610 ?        Ssl    0:00 xfce4-power-manager --restart --sm-client-id 2e3fe9ad
+ 3615 ?        Sl     0:00 /usr/lib/gvfs/gvfsd-fuse /run/user/51036/gvfs -f -o b
+ 3635 ?        Sl     0:00 /usr/bin/python3 /usr/share/system-config-printer/app
+ 3641 ?        Sl     0:00 update-notifier
+ 3642 ?        Sl     0:00 /usr/bin/python3 /usr/bin/blueman-applet
+ 3644 ?        S      0:02 xscreensaver -no-splash
+ 3648 ?        Sl     0:00 light-locker
+ 3655 ?        Sl     0:00 nm-applet
+ 3657 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-1.0 /us
+ 3662 ?        S      0:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-1.0 /us
+ 3663 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /us
+ 3667 ?        Sl     0:00 /usr/lib/policykit-1-gnome/polkit-gnome-authenticatio
+ 3674 ?        Ssl    0:00 xfce4-volumed
+ 3683 ?        Sl     0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+ 3686 ?        Sl     0:00 /usr/lib/dconf/dconf-service
+ 3693 ?        S      0:00 /usr/bin/dbus-daemon --config-file=/etc/at-spi2/acces
+ 3697 ?        Sl     0:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+ 3700 ?        Ssl    0:01 /usr/lib/udisks2/udisksd --no-debug
+ 3704 ?        S      0:00 gnome-pty-helper
+ 3705 ?        S<l    0:00 /usr/bin/pulseaudio --start --log-target=syslog
+ 3707 ?        Sl     0:02 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-s
+ 3714 pts/1    Ss+    0:00 bash
+ 3726 ?        Sl     0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+ 3731 ?        Sl     0:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+ 3736 ?        Sl     0:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+ 3741 ?        Sl     0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+ 3755 ?        Sl     0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.13 /org/gtk/gv
+ 3767 ?        S      0:00 upstart --user --startup-event indicator-services-sta
+ 3771 ?        Ssl    0:00 /usr/lib/x86_64-linux-gnu/indicator-messages/indicato
+ 3772 ?        Ssl    0:00 /usr/lib/x86_64-linux-gnu/indicator-bluetooth/indicat
+ 3773 ?        Ssl    0:00 /usr/lib/x86_64-linux-gnu/indicator-power/indicator-p
+ 3774 ?        Ssl    0:00 /usr/lib/x86_64-linux-gnu/indicator-datetime/indicato
+ 3775 ?        Ssl    0:00 /usr/lib/x86_64-linux-gnu/indicator-keyboard/indicato
+ 3776 ?        Ssl    0:00 /usr/lib/x86_64-linux-gnu/indicator-sound/indicator-s
+ 3777 ?        Ssl    0:00 /usr/lib/x86_64-linux-gnu/indicator-session/indicator
+ 3783 ?        Ssl    0:00 /usr/lib/x86_64-linux-gnu/indicator-application/indic
+ 3825 ?        Sl     0:00 /usr/lib/evolution/evolution-source-registry
+ 3836 ?        Sl     0:00 /usr/lib/evolution/evolution-calendar-factory
+ 3843 ?        Sl     0:00 /usr/lib/evolution/evolution-calendar-factory-subproc
+ 3853 ?        Sl     0:00 /usr/lib/evolution/evolution-addressbook-factory
+ 3855 ?        Sl     0:00 /usr/lib/evolution/evolution-calendar-factory-subproc
+ 3862 ?        Sl     0:00 /usr/lib/evolution/evolution-addressbook-factory-subp
+ 3887 ?        Sl     0:00 /usr/lib/gvfs/gvfsd-metadata
+ 3917 ?        S      0:00 /usr/lib/bluetooth/obexd
+ 3923 ?        S      0:00 /opt/eclipseoxygen/eclipse
+ 3924 ?        Sl    10:26 /usr/bin/java -Dosgi.requiredJavaVersion=1.8 -Dosgi.i
+ 4104 ?        SLl    1:19 /opt/google/chrome/chrome
+ 4109 ?        S      0:00 cat
+ 4110 ?        S      0:00 cat
+ 4113 ?        S      0:00 /opt/google/chrome/chrome --type=zygote --enable-cras
+ 4114 ?        S      0:00 /opt/google/chrome/nacl_helper
+ 4117 ?        S      0:00 /opt/google/chrome/chrome --type=zygote --enable-cras
+ 4156 ?        Sl     2:53 /opt/google/chrome/chrome --type=gpu-process --field-
+ 4158 ?        S<     0:00 [kworker/2:2H]
+ 4168 ?        S      0:03 /opt/google/chrome/chrome --type=-broker
+ 4183 ?        S<     0:00 [kworker/1:2H]
+ 4314 ?        Sl     0:02 /opt/google/chrome/chrome --type=renderer --field-tri
+ 4542 ?        Ss     0:00 /usr/sbin/cupsd -l
+ 4544 ?        Ssl    0:00 /usr/sbin/cups-browsed
+ 8378 ?        S      0:00 [kworker/5:0]
+ 8402 ?        S<     0:00 [kworker/7:2H]
+ 8403 ?        S<     0:00 [kworker/4:2H]
+ 8724 ?        Sl     0:00 /usr/lib/gvfs/gvfsd-network --spawner :1.13 /org/gtk/
+ 8731 ?        Sl     0:00 /usr/lib/gvfs/gvfsd-smb-browse --spawner :1.13 /org/g
+ 8742 ?        Sl     0:00 /usr/lib/gvfs/gvfsd-dnssd --spawner :1.13 /org/gtk/gv
+ 8762 ?        S      0:00 [kworker/5:1]
+ 8918 ?        S      0:00 [kworker/3:0]
+ 9108 ?        S<     0:00 [kworker/3:2H]
+ 9134 ?        S<     0:00 [kworker/1:1H]
+10571 ?        Sl     0:02 /opt/google/chrome/chrome --type=renderer --field-tri
+11089 ?        S      0:00 [kworker/4:1]
+11237 ?        S      0:00 [kworker/3:2]
+11335 ?        S      0:00 [kworker/0:1]
+12782 ?        S      0:00 [kworker/2:1]
+13024 ?        S<     0:00 [kworker/5:1H]
+15907 ?        S      0:00 [kworker/1:2]
+16736 ?        S      0:00 [kworker/u16:1]
+17978 ?        S<     0:00 [kworker/0:1H]
+19237 ?        S      0:00 [kworker/1:0]
+20072 ?        S<     0:00 [kworker/6:2H]
+20282 ?        S      0:00 pickup -l -t unix -u -c
+20550 ?        S      0:00 [kworker/7:0]
+20926 ?        S      0:00 [kworker/u16:2]
+21826 ?        S      0:00 [kworker/2:0]
+22394 ?        S      0:00 [kworker/6:2]
+22401 ?        S      0:00 [kworker/4:0]
+22493 ?        S      0:00 [kworker/7:2]
+22536 ?        S<     0:00 [kworker/0:0H]
+22644 pts/2    Ss     0:00 bash
+22647 pts/2    S+     0:00 ./MRShell
+22648 pts/2    S+     0:00 script test
+22649 pts/12   Ss     0:00 bash -i
+22652 pts/12   S+     0:00 ./MRShell
+22660 ?        S      0:00 [kworker/u16:0]
+22661 pts/12   R+     0:00 ps -ax
+ls &
+MRShell: ~/home/mrn6/workspace/MRShell$ CommandLine.cpp  Debug	      MRShellDriver.cpp  Path.cpp  Prompt.cpp
+CommandLine.h	 MRShell.cpp  MRShell.h		 Path.h    Prompt.h
+exit
+Mr. Shell bids you farewell~
+mrn6@kay:~/workspace/MRShell/Debug$ ./MRShell
+MR. Shell bids you welcome to this fine executing environment!
+MRShell: ~/home/mrn6/workspace/MRShell/Debug$ invalidcommandhere
+Cannot find a system program or built in function with name: invalidcommandhere. Please enter a new input.
+MRShell: ~/home/mrn6/workspace/MRShell/Debug$ nice
+0
+MRShell: ~/home/mrn6/workspace/MRShell/Debug$ exit
+Mr. Shell bids you farewell~
+mrn6@kay:~/workspace/MRShell/Debug$ exit
+
+Script done on Wed 07 Mar 2018 06:52:58 PM EST
